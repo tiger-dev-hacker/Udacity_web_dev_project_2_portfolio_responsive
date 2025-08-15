@@ -1,0 +1,9 @@
+$footer-background-color: #05445E; 
+$footer-text-color: azure; 
+.footer_text {
+    background-color: $footer-background-color;
+    color: $footer-text-color; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

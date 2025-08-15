@@ -1,0 +1,27 @@
+$primary-background-color: #05445E; 
+$header-text-color: #fff9ff; 
+.navigation-header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary-background-color; 
+    margin-top: 0;
+    margin-bottom: 1rex;
+    width: 100%;
+    color: $header-text-color;
+
+    .navbar-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rex;
+        }
+
+    .navbar-menu-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: large
+    }
+}
+

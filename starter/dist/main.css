@@ -77,4 +77,8 @@
 }
 .developer__bio--section .developer__bio_description--card .developer_bio--connect {
   display: flexbox;
-}/*# sourceMappingURL=blocks.css.map */
+}
+
+body {
+  background-color: #d4f1f4;
+}/*# sourceMappingURL=main.css.map */
