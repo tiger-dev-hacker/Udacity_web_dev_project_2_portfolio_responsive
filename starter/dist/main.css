@@ -19,6 +19,11 @@
   align-items: center;
   justify-content: center;
   font-size: large;
+  list-style-type: none;
+}
+.navigation-header nav .navbar-menu-list li {
+  margin-right: 2rex;
+  margin-left: 1rex;
 }
 
 .footer_text {
@@ -64,13 +69,6 @@
 }
 .developer__bio--section .developer__bio_description--card .developer_bio_blurb {
   display: flexbox;
-}
-.developer__bio--section .developer__bio_description--card .navbar-menu-list {
-  list-style-type: none;
-}
-.developer__bio--section .developer__bio_description--card .navbar-menu-list li {
-  margin-right: 2rex;
-  margin-left: 1rex;
 }
 .developer__bio--section .developer__bio_description--card .developer_bio--view-more {
   display: flexbox;

@@ -15,13 +15,23 @@ $header-text-color: #fff9ff;
             align-items: center;
             justify-content: center;
             margin: 1rex;
-        }
-
-    .navbar-menu-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: large
     }
-}
+
+            .navbar-menu-list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: large;
+                    list-style-type: none;
+            
+                    li {
+                        margin-right: 2rex;
+                        margin-left: 1rex;
+                    }
+                    }
+                }
+    
+
+   
+
 
