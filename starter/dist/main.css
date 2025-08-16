@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: url("../../img/software_developer_vibe.jpg");
+  background-image: url("../../img/software_developer_vibe.jpg");
   height: 50rex;
   padding: 10rex;
 }
@@ -75,6 +75,43 @@
 }
 .developer__bio--section .developer__bio_description--card .developer_bio--connect {
   display: flexbox;
+}
+
+.latest__projects--container {
+  background-color: aquamarine;
+  padding: 1.5rex;
+}
+.latest__projects--container .latest__project__card--title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.latest__projects--container .latest__project__card--title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.latest__projects--container .latest_projects__card--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30rex;
+}
+.latest__projects--container .latest_projects__card--container .project__card--holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid purple;
+  margin: 2rex;
+  padding: 1rex;
+  background-color: aqua;
+}
+.latest__projects--container .latest__projects--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rex;
 }
 
 body {

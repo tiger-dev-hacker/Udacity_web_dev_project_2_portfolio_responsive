@@ -1,0 +1,49 @@
+.latest__projects--container {
+    background-color: aquamarine;
+    padding: 1.5rex;
+
+    .latest__project__card--title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .latest__project__card--title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        .latest_projects__card--container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30rex;
+
+            .project__card--holder {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid purple;
+                    margin: 2rex;
+                    padding: 1rex;
+                    background-color: aqua;
+                }
+        }
+        .latest__projects--button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rex;
+
+        }
+}
+
+
+
+
+
+
+
+
+
