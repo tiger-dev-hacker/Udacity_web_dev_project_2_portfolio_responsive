@@ -12,145 +12,166 @@
     />
   </head>
 
-  <body id="body">
-    <header>
-      <div
-        class="navigation-header"
-        aria-describedby="navigation bar container">
-        <nav aria-describedby="navigation bar for the page">
-          <div class="navbar-logo">Logo</div>
-          <div aria-describedby="navbar-menu">
-            <ul class="navbar-menu-list">
-              <li>Projects</li>
-              <li>Skills</li>
-              <li>Resume</li>
-              <li>Contact links</li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main id="main">
-      <section
-        id="bio"
-        class="bio"
-        aria-describedby="Bio section of the developer">
-         <div class="developer__bio--section">
-          <div class="developer_bio_profile-image--card"
-            aria-describedby="Profile image of the developer">
-            <img
-              class="developer__bio--image"
-              src="./img/background.jpg"
-              alt=""
-            />
-          </div>
-          <div class="developer__bio_description--card">
-            <div class="developer_bio__title">
-              <h2 aria-describedby="Developer Portfolio Title">
-                Joan Wicker's Development Portfolio
-              </h2>
+  <body>
+    <div class="flex-container">
+      <header>
+        <div
+          class="navigation-header"
+          aria-describedby="navigation bar container"
+        >
+          <nav aria-describedby="navigation bar for the page">
+            <div class="navbar-logo">
+              <div class="navigation__developer__logo">
+                <img
+                  class="navigation__developer__logo--img"
+                  src="./img/software_developer_logo.jpg"
+                  alt="Software developer logo"
+                />
+              </div>
             </div>
-            <div class="developer_bio_blurb">
-              <p>
-                I am a full stack web developer, security software engineer and
-                a machine learning enthusiast. I have developed many skills, and
-                experiences in the tech industry over the years. I have been a
-                part of many hackathons and capture-the-flag competitions. There
-                are only two favorite things in the world for me.
-              </p>
-              <ol>
-                <li>Solving coding bugs</li>
-                <li>Provide seamless UI/UX experiences</li>
-              </ol>
+            <div aria-describedby="navbar-menu">
+              <ul class="navbar-menu-list">
+                <li>Projects</li>
+                <li>Skills</li>
+                <li>Resume</li>
+                <li>Contact links</li>
+              </ul>
             </div>
-            <div class="developer_bio--view-more">
-              <button>View More</button>
-              <button>Connect on LinkedIn</button>
-            </div>
-          </div>
+          </nav>
         </div>
-      </section>
-      <section id="latest-projects">
-        <div class="latest__projects--container">
-          <div class="latest__project__card--title"><h2>Latest Projects</h2></div>
-
-          <div class="latest_projects__card--container">
-            <div class="project__card--holder">
-              <article>
-                <div class="latest-projects__image">
-                  <img src="./img/projects.jpg" alt="Latest Project 1 image" />
-                </div>
-                <div class="latest-projects__heading">
-                  <h2>Popcorn - A movie app</h2>
-                </div>
-                <div class="latest-projects__short-description">
-                  <p>
-                    Popcorn is a MERN-stack based web application that uses
-                    React and Tailwind CSS to display dynamic UI experiences for
-                    movie cards. It fetches movies from the TMDB API to populate
-                    the MONGODB database with all the movies requested by the
-                    user. It also uses ExpressJS as a backend to serve api
-                    services such as authentication, meta-data retrieval and
-                    real-time analytics of trending movies for users.
-                  </p>
-                </div>
-              </article>
+      </header>
+      <main id="main">
+        <section
+          id="bio"
+          class="developer-bio__section--holder"
+          aria-describedby="Bio section of the developer"
+        >
+          <div class="developer__bio--section">
+            <div
+              class="developer_bio_profile-image--card"
+              aria-describedby="Profile image of the developer"
+            >
+              <img
+                class="developer__bio--image"
+                src="./img/developer_profile.png"
+                alt=""
+              />
             </div>
-
-            <div class="project__card--holder">
-              <article>
-                <div class="latest-projects__image">
-                  <img src="./img/projects.jpg" alt="Latest Project 2 image" />
-                </div>
-                <div class="latest-projects__heading">
-                  <h2>Resumind-AI based resume scanner</h2>
-                </div>
-                <div class="latest-projects__short-description">
-                  <p>
-                    Resumind is a React, Tailwind CSS, and Claude based ATS
-                    (Applicant Tracking System) - based resume scanning
-                    application that generates a match score for a resume on
-                    providing a job description. The service allows the user to
-                    upload their resume and paste the job description and then
-                    uses the built-in LLM model to provide the best possible
-                    match score for the project.
-                  </p>
-                </div>
-              </article>
-            </div>
-
-            <div class="project__card--holder">
-              <article>
-                <div class="latest-projects__image">
-                  <img src="./img/projects.jpg" alt="Latest Project 3 image" />
-                </div>
-                <div class="latest-projects__heading">
-                  <h2>Cryptocurrency Calculator</h2>
-                </div>
-                <div class="latest-projects__short-description">
-                  <p>
-                    This is a Python-native app that uses Streamlit, and flask
-                    frameworks to predict the prices of the bitcoin and stock
-                    price calculator in the near future. The prediction is done
-                    by the LSTM (Long Short Term Memory) model to use different
-                    datasets from Yahoo finance to generate efficient prediction
-                    values to guide user investments decisions in the right
-                    direction.
-                  </p>
-                </div>
-              </article>
+            <div class="developer__bio_description--card">
+              <div class="developer_bio__title">
+                <h2 aria-describedby="Developer Portfolio Title">
+                  Joan Wicker's Development Portfolio
+                </h2>
+              </div>
+              <div class="developer_bio_blurb">
+                <p>
+                  I am a full stack web developer, security software engineer
+                  and a machine learning enthusiast. I have developed many
+                  skills, and experiences in the tech industry over the years. I
+                  have been a part of many hackathons and capture-the-flag
+                  competitions.
+                </p>
+              </div>
+              <div class="developer_bio--view-more">
+                <button>View More</button>
+                <button>Connect on LinkedIn</button>
+              </div>
             </div>
           </div>
-          <div class="latest__projects--button">
-            <button> Check Out </button>
+        </section>
+        <section id="latest-projects">
+          <div class="latest__projects--container">
+            <div class="latest__project__card--title">
+              <h2>Latest Projects</h2>
+            </div>
+
+            <div class="latest_projects__card--container">
+              <div class="project__card--holder">
+                <article>
+                  <div class="latest-projects__image">
+                    <img
+                      src="./img/projects.jpg"
+                      alt="Latest Project 1 image"
+                    />
+                  </div>
+                  <div class="latest-projects__heading">
+                    <h2>Popcorn - A movie app</h2>
+                  </div>
+                  <div class="latest-projects__short-description">
+                    <p>
+                      Popcorn is a MERN-stack based web application that uses
+                      React and Tailwind CSS to display dynamic UI experiences
+                      for movie cards. It fetches movies from the TMDB API to
+                      populate the MONGODB database with all the movies
+                      requested by the user. It also uses ExpressJS as a backend
+                      to serve api services such as authentication, meta-data
+                      retrieval and real-time analytics of trending movies for
+                      users.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="project__card--holder">
+                <article>
+                  <div class="latest-projects__image">
+                    <img
+                      src="./img/projects.jpg"
+                      alt="Latest Project 2 image"
+                    />
+                  </div>
+                  <div class="latest-projects__heading">
+                    <h2>Resumind-AI based resume scanner</h2>
+                  </div>
+                  <div class="latest-projects__short-description">
+                    <p>
+                      Resumind is a React, Tailwind CSS, and Claude based ATS
+                      (Applicant Tracking System) - based resume scanning
+                      application that generates a match score for a resume on
+                      providing a job description. The service allows the user
+                      to upload their resume and paste the job description and
+                      then uses the built-in LLM model to provide the best
+                      possible match score for the project.
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="project__card--holder">
+                <article>
+                  <div class="latest-projects__image">
+                    <img
+                      src="./img/projects.jpg"
+                      alt="Latest Project 3 image"
+                    />
+                  </div>
+                  <div class="latest-projects__heading">
+                    <h2>Cryptocurrency Calculator</h2>
+                  </div>
+                  <div class="latest-projects__short-description">
+                    <p>
+                      This is a Python-native app that uses Streamlit, and flask
+                      frameworks to predict the prices of the bitcoin and stock
+                      price calculator in the near future. The prediction is
+                      done by the LSTM (Long Short Term Memory) model to use
+                      different datasets from Yahoo finance to generate
+                      efficient prediction values to guide user investments
+                      decisions in the right direction.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="latest__projects--button">
+              <button>Check Out</button>
+            </div>
           </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer_text">
+          <p>&copy; Joan Wicker 2025 All Rights Reserved.</p>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer_text">
-        <p>&copy; Joan Wicker 2025 All Rights Reserved.</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

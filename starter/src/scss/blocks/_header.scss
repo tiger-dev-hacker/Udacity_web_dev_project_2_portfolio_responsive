@@ -1,20 +1,47 @@
 $primary-background-color: #05445E; 
 $header-text-color: #fff9ff; 
+.navigation-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .navigation-header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: $primary-background-color; 
-    margin-top: 0;
-    margin-bottom: 1rex;
-    width: 100%;
     color: $header-text-color;
+    width: 99vw;
+    flex-direction: row;
 
     .navbar-logo {
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 1rex;
+            flex-direction: row;
+
+            .navigation__developer__logo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 10rex;
+                width: 10rex;
+                padding: 1rex;
+                flex-direction: row;
+            }
+
+            .navigation__developer__logo--img
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 10rex;
+                width: 10rex;
+                flex-direction: row;
+            }
     }
 
             .navbar-menu-list {
@@ -23,15 +50,27 @@ $header-text-color: #fff9ff;
                     justify-content: center;
                     font-size: large;
                     list-style-type: none;
+                    flex-direction: row;
             
                     li {
                         margin-right: 2rex;
-                        margin-left: 1rex;
+                        padding: 1rex;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
                     }
                 }
     
 
-   
+   @media (max-width: 750px) {
+       .navigation-header nav {
+           flex-direction: column;
+           flex-wrap: wrap;
 
-
+        .navbar-menu-list {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+       }
+   }

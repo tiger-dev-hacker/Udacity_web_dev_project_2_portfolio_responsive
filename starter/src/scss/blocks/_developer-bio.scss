@@ -1,21 +1,35 @@
+main{
+    display: flexbox;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.developer__bio__section--holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
 .developer__bio--section {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: row;
     background-image: url("../../img/software_developer_vibe.jpg");
-    height: 50rex;
     padding: 10rex;
 
     .developer_bio_profile-image--card {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         border: 2px solid salmon;
 
-        .developer__bio--image {
+        .developer__bio--image {    
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             height: 60rex;
             width: 60rex;
         }
@@ -24,9 +38,11 @@
 
 
     .developer__bio_description--card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         background-color: #37b7c8;
-        position: relative;
-        right: 15rex;
         border: 2px solid red;
         padding: 2rex;
         width: 50rex;
@@ -34,20 +50,56 @@
 
         .developer_bio__title {
             display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
         }
 
         .developer_bio_blurb {
-            display: flexbox;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
         }
 
         .developer_bio--view-more {
-            display: flexbox;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin: 1rex;
         }
 
         .developer_bio--connect {
-            display: flexbox;
-
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin: 1rex;
         }
     }
 }
 
+ @media (max-width: 750px) {
+    .developer__bio__section--holder
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .developer__bio--section {
+                flex-direction: column;
+                flex-wrap: wrap;
+
+                .developer__bio--image{
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+
+                .developer__bio_description--card{
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+            }
+    }
+
+ }
