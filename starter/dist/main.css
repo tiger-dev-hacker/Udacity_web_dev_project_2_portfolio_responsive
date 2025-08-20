@@ -236,4 +236,17 @@ article {
     flex-direction: column;
     flex-wrap: wrap;
   }
-}/*# sourceMappingURL=blocks.css.map */
+}
+.flex-container {
+  background-color: #d4f1f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 750px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
