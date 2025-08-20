@@ -1,7 +1,9 @@
 main{
-    display: flexbox;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100vw;
+    flex-direction: column;
 }
 
 .developer__bio__section--holder{
@@ -9,73 +11,62 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin: 1rem;
+    border: 2px solid red;
+    background-image: url("../../img/software_developer_vibe.jpg");
+    width: 100vw;
+
 }
 .developer__bio--section {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
-    background-image: url("../../img/software_developer_vibe.jpg");
-    padding: 10rex;
+    width: 100vw;
+    margin: 1rem;
 
-    .developer_bio_profile-image--card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border: 2px solid salmon;
-
-        .developer__bio--image {    
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            height: 60rex;
-            width: 60rex;
-        }
-    }
-
-
-
-    .developer__bio_description--card {
+    .developer__bio__description--card {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         background-color: #37b7c8;
-        border: 2px solid red;
-        padding: 2rex;
-        width: 50rex;
-        height: 50rex;
+        border: 2px solid purple;
+        width: 40rex;
+        height: 40rex;
+        flex: 50%;
+        margin: 2rem;
+        padding: 1rex;
+    
+    .developer__bio--image{
 
-        .developer_bio__title {
+    }
+        .developer__bio__title {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: row;
         }
 
-        .developer_bio_blurb {
+        .developer__bio__blurb {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: row;
         }
 
-        .developer_bio--view-more {
+        .developer__bio--view-more {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: row;
-            margin: 1rex;
         }
 
-        .developer_bio--connect {
+        .developer__bio--connect {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: row;
-            margin: 1rex;
         }
     }
 }
@@ -90,16 +81,11 @@ main{
                 flex-direction: column;
                 flex-wrap: wrap;
 
-                .developer__bio--image{
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                }
 
-                .developer__bio_description--card{
-                    flex-direction: column;
-                    flex-wrap: wrap;
+                .developer__bio__description--card{
+                    flex: 100%;
                 }
-            }
     }
 
  }
+}

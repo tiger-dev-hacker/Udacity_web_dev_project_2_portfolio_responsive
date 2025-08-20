@@ -4,7 +4,8 @@ $header-text-color: #fff9ff;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    width: 100vw;
+
 }
 
 .navigation-header nav {
@@ -13,8 +14,8 @@ $header-text-color: #fff9ff;
     justify-content: space-between;
     background-color: $primary-background-color; 
     color: $header-text-color;
-    width: 99vw;
     flex-direction: row;
+    width: 100vw;
 
     .navbar-logo {
             display: flex;
