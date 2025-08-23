@@ -1,4 +1,6 @@
-main{
+@use "../utils/utils.scss";
+
+main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,86 +8,60 @@ main{
     flex-direction: column;
 }
 
-.developer__bio__section--holder{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+.developer__bio__section--holder {
+    @include footer-flex-center-row;
     margin: 1rem;
-    border: 2px solid red;
     background-image: url("../../img/software_developer_vibe.jpg");
     width: 100vw;
 
 }
+
 .developer__bio--section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    @include footer-flex-center-row;
     width: 100vw;
     margin: 1rem;
 
     .developer__bio__description--card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: #37b7c8;
+        @include footer-flex-center-column;
+        background-color: $developer-bio-description-card-color;
         border: 2px solid purple;
         width: 40rex;
         height: 40rex;
         flex: 50%;
         margin: 2rem;
         padding: 1rex;
-    
-    .developer__bio--image{
 
-    }
+        .developer__bio--image {}
+
         .developer__bio__title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
+            @include footer-flex-center-row;
         }
 
         .developer__bio__blurb {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
+            @include footer-flex-center-row;
         }
 
         .developer__bio--view-more {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
+            @include footer-flex-center-row;
         }
 
         .developer__bio--connect {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
+            @include footer-flex-center-row;
         }
     }
 }
 
- @media (max-width: 750px) {
-    .developer__bio__section--holder
-    {
-        flex-direction: column;
-        flex-wrap: wrap;
+@media (max-width: 750px) {
+    .developer__bio__section--holder {
+        @include flex-wrap-column;
 
         .developer__bio--section {
-                flex-direction: column;
-                flex-wrap: wrap;
+            @include flex-wrap-column;
 
+            .developer__bio__description--card {
+                flex: 100%;
+            }
+        }
 
-                .developer__bio__description--card{
-                    flex: 100%;
-                }
     }
-
- }
 }

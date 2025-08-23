@@ -1,18 +1,14 @@
-$footer-background-color: #05445E; 
-$footer-text-color: azure; 
+@use "../utils/utils.scss";
+
 .footer_text {
     background-color: $footer-background-color;
-    color: $footer-text-color; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    color: $footer-text-color;
+    @include footer-flex-center-row;
     width: 100vw;
 }
 
- @media (max-width: 750px) {
-    .footer_text{
-        flex-direction: column;
-        flex-wrap: wrap;
+@media (max-width: 750px) {
+    .footer_text {
+        @include flex-wrap-column;
     }
- }
+}

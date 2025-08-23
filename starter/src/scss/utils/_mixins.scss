@@ -1,0 +1,24 @@
+@mixin footer-flex-center-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@mixin footer-flex-center-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin footer-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-wrap-column {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
