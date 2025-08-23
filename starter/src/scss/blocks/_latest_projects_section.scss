@@ -1,42 +1,62 @@
-@use "../utils/utils.scss"; 
 #latest-projects{
-   @include footer-flex-center-column; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 article{
-    @include footer-flex-center-column; 
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .latest__projects--container {
-    @include footer-flex-center-column; 
-    background-color: $latest-project-container-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aquamarine;
     padding: 1.5rex;
 
     .latest__project__card--title {
-            @include footer-flex-center; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 1rex;
         }
             .latest__project__card--title {
-                @include footer-flex-center; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 padding: 1rex;
             }
 
         .latest_projects__card--container {
-            @include footer-flex-center-row; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
             padding: 1rex;
             width: 100%;
            
 
             .project__card--holder {
-                    @include footer-flex-center-row; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
                     border: 2px solid purple;
                     margin: 2rex;
                     padding: 1rex;
-                    background-color: $project-card-holder-color;
+                    background-color: aqua;
                 }
         }
         .latest__projects--button {
-            @include footer-flex-center; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 2rex;
             padding: 1rex;
 
@@ -48,15 +68,19 @@ article{
 @media (max-width: 750px) {
 #latest-projects 
 {
-    @include flex-wrap-column; 
+    flex-direction: column;
+    flex-wrap: wrap;
     .latest__projects--container {
-            @include flex-wrap-column;
+            flex-direction: column;
+            flex-wrap: wrap;
     
             .latest_projects__card--container {
-                @include flex-wrap-column;
+                flex-direction: column;
+                flex-wrap: wrap;
     
                 .project__card--holder {
-                    @include flex-wrap-column;
+                    flex-direction: column;
+                    flex-wrap: wrap;
                 }
             }
         }

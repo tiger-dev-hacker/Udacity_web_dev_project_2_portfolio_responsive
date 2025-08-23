@@ -1,6 +1,9 @@
-@use "../utils/utils.scss";
+$primary-background-color: #05445E; 
+$header-text-color: #fff9ff; 
 .navigation-header{
-    @include footer-flex-center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
 
 }
@@ -15,36 +18,47 @@
     width: 100vw;
 
     .navbar-logo {
-            @include footer-flex-center-row; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 1rex;
+            flex-direction: row;
 
             .navigation__developer__logo{
-                @include footer-flex-center-row; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 height: 10rex;
                 width: 10rex;
                 padding: 1rex;
-              
+                flex-direction: row;
             }
 
             .navigation__developer__logo--img
             {
-                @include footer-flex-center-row; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 height: 10rex;
                 width: 10rex;
-          
+                flex-direction: row;
             }
     }
 
             .navbar-menu-list {
-                    @include footer-flex-center-row; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     font-size: large;
                     list-style-type: none;
-                
+                    flex-direction: row;
             
                     li {
                         margin-right: 2rex;
                         padding: 1rex;
-                        @include footer-flex-center-row; 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
                     }
                 }
@@ -52,10 +66,12 @@
 
    @media (max-width: 750px) {
        .navigation-header nav {
-            @include footer-flex-center; 
+           flex-direction: column;
+           flex-wrap: wrap;
 
         .navbar-menu-list {
-            @include footer-flex-center; 
+                flex-direction: column;
+                flex-wrap: wrap;
             }
        }
    }
