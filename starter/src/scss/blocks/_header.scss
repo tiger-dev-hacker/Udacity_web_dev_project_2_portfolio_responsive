@@ -1,9 +1,6 @@
-$primary-background-color: #05445E; 
-$header-text-color: #fff9ff; 
+@use "../utils/utils.scss";
 .navigation-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include footer-flex-center; 
     width: 100vw;
 
 }
@@ -18,47 +15,36 @@ $header-text-color: #fff9ff;
     width: 100vw;
 
     .navbar-logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include footer-flex-center-row; 
             margin: 1rex;
-            flex-direction: row;
 
             .navigation__developer__logo{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include footer-flex-center-row; 
                 height: 10rex;
                 width: 10rex;
                 padding: 1rex;
-                flex-direction: row;
+              
             }
 
             .navigation__developer__logo--img
             {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include footer-flex-center-row; 
                 height: 10rex;
                 width: 10rex;
-                flex-direction: row;
+          
             }
     }
 
             .navbar-menu-list {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include footer-flex-center-row; 
                     font-size: large;
                     list-style-type: none;
-                    flex-direction: row;
+                
             
                     li {
                         margin-right: 2rex;
                         padding: 1rex;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @include footer-flex-center-row; 
                     }
                     }
                 }
@@ -66,12 +52,10 @@ $header-text-color: #fff9ff;
 
    @media (max-width: 750px) {
        .navigation-header nav {
-           flex-direction: column;
-           flex-wrap: wrap;
+            @include footer-flex-center; 
 
         .navbar-menu-list {
-                flex-direction: column;
-                flex-wrap: wrap;
+            @include footer-flex-center; 
             }
        }
    }
