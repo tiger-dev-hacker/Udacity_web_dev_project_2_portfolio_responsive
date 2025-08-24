@@ -156,16 +156,7 @@ main {
   justify-content: center;
   flex-direction: column;
 }
-
-article {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.latest__projects--container {
+#latest-projects .latest__projects__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,19 +164,13 @@ article {
   background-color: aquamarine;
   padding: 1.5rex;
 }
-.latest__projects--container .latest__project__card--title {
+#latest-projects .latest__projects__container__card--title {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rex;
 }
-.latest__projects--container .latest__project__card--title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rex;
-}
-.latest__projects--container .latest_projects__card--container {
+#latest-projects .latest__projects__container__card__description {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,7 +178,7 @@ article {
   padding: 1rex;
   width: 100%;
 }
-.latest__projects--container .latest_projects__card--container .project__card--holder {
+#latest-projects .latest__projects__container__card__description--holder {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,7 +188,14 @@ article {
   padding: 1rex;
   background-color: aqua;
 }
-.latest__projects--container .latest__projects--button {
+#latest-projects .latest__projects__container__card__description--holder--item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#latest-projects .latest__projects__container--button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,15 +208,23 @@ article {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  #latest-projects .latest__projects--container {
+  #latest-projects .latest__projects__container {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  #latest-projects .latest__projects--container .latest_projects__card--container {
+  #latest-projects .latest__projects__container__card--title {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  #latest-projects .latest__projects--container .latest_projects__card--container .project__card--holder {
+  #latest-projects .latest__projects__container__card__description {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #latest-projects .latest__projects__container__card__description--holder {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #latest-projects .latest__projects__container--button {
     flex-direction: column;
     flex-wrap: wrap;
   }
