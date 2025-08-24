@@ -88,7 +88,7 @@ main {
   flex-direction: column;
 }
 
-.developer__bio__section--holder {
+.developer__bio__section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,8 +97,7 @@ main {
   background-image: url("../../img/software_developer_vibe.jpg");
   width: 100vw;
 }
-
-.developer__bio--section {
+.developer__bio__section__holder {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,7 +105,7 @@ main {
   width: 100vw;
   margin: 1rem;
 }
-.developer__bio--section .developer__bio__description--card {
+.developer__bio__section__holder__description-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,25 +118,19 @@ main {
   margin: 2rem;
   padding: 1rex;
 }
-.developer__bio--section .developer__bio__description--card .developer__bio__title {
+.developer__bio__section__holder__description-card--title {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
-.developer__bio--section .developer__bio__description--card .developer__bio__blurb {
+.developer__bio__section__holder__description-card--blurb {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
-.developer__bio--section .developer__bio__description--card .developer__bio--view-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-.developer__bio--section .developer__bio__description--card .developer__bio--connect {
+.developer__bio__section__holder__description-card--view-more {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,15 +138,15 @@ main {
 }
 
 @media (max-width: 750px) {
-  .developer__bio__section--holder {
+  .developer__bio__section {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .developer__bio__section--holder .developer__bio--section {
+  .developer__bio__section__holder {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .developer__bio__section--holder .developer__bio--section .developer__bio__description--card {
+  .developer__bio__section__holder__description-card {
     flex: 100%;
   }
 }
