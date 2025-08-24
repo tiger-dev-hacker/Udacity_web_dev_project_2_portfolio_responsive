@@ -89,6 +89,7 @@ main {
   background-image: url("../src/img/software_developer_vibe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .developer__bio__section {
@@ -116,7 +117,7 @@ main {
   flex-direction: column;
   background-color: #37b7c8;
   border: 2px solid purple;
-  width: 40rex;
+  width: calc(100rex - 25rem);
   height: 40rex;
   flex: 50%;
   margin: 2rem;
@@ -142,9 +143,9 @@ main {
 }
 
 @media (max-width: 750px) {
-  .main {
+  main {
     background-color: aliceblue;
-    backface-visibility: hidden;
+    background-image: none;
   }
   .developer__bio__section {
     flex-direction: column;
@@ -156,6 +157,10 @@ main {
     background-image: url("../src/img/software_developer_vibe.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    filter: contrast(0.9);
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .developer__bio__section__holder__description-card {
     flex: 100%;
@@ -188,6 +193,7 @@ main {
   flex-direction: row;
   padding: 1rex;
   width: 100%;
+  backdrop-filter: brightness(0.5);
 }
 #latest-projects .latest__projects__container__card__description--holder {
   display: flex;
@@ -218,6 +224,7 @@ main {
   #latest-projects {
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 0;
   }
   #latest-projects .latest__projects__container {
     flex-direction: column;
