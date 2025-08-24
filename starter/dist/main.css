@@ -86,6 +86,9 @@ main {
   justify-content: space-between;
   width: 100vw;
   flex-direction: column;
+  background-image: url("../src/img/software_developer_vibe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .developer__bio__section {
@@ -93,9 +96,9 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin: 1rem;
-  background-image: url("../../img/software_developer_vibe.jpg");
+  margin: 5rem;
   width: 100vw;
+  height: auto;
 }
 .developer__bio__section__holder {
   display: flex;
@@ -104,6 +107,7 @@ main {
   flex-direction: row;
   width: 100vw;
   margin: 1rem;
+  backdrop-filter: contrast(0.5);
 }
 .developer__bio__section__holder__description-card {
   display: flex;
@@ -138,6 +142,10 @@ main {
 }
 
 @media (max-width: 750px) {
+  .main {
+    background-color: aliceblue;
+    backface-visibility: hidden;
+  }
   .developer__bio__section {
     flex-direction: column;
     flex-wrap: wrap;
@@ -145,6 +153,9 @@ main {
   .developer__bio__section__holder {
     flex-direction: column;
     flex-wrap: wrap;
+    background-image: url("../src/img/software_developer_vibe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .developer__bio__section__holder__description-card {
     flex: 100%;
