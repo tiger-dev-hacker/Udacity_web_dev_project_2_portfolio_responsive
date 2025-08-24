@@ -1,8 +1,8 @@
 @use "../utils/utils.scss";
 
 .flex-container {
-    background-color: $base-background-color;
-    @include footer-flex-center-column;
+    background-color: utils.$base-background-color;
+    @include utils.footer-flex-center-column;
 }
 
 @media (max-width: 750px) {

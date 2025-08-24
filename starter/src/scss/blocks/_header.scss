@@ -1,61 +1,60 @@
-@use "../utils/utils.scss";
-
-.navigation-header {
-    @include footer-flex-center;
+@use "../utils/utils"; 
+.navigation__header {
+    @include utils.footer-flex-center;
     width: 100vw;
+&__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: utils.$primary-background-color;
+        color: utils.$header-text-color;
+        flex-direction: row;
+        width: 100vw;
 
-}
+        &__developer {
+            @include utils.footer-flex-center-row;
+            margin: 1rex;
 
-.navigation-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $primary-background-color;
-    color: $header-text-color;
-    flex-direction: row;
-    width: 100vw;
+            &--logo {
+                @include utils.footer-flex-center-row;
+                height: 10rex;
+                width: 10rex;
+                padding: 1rex;
 
-    .navbar-logo {
-        @include footer-flex-center-row;
-        margin: 1rex;
-
-        .navigation__developer__logo {
-            @include footer-flex-center-row;
-            height: 10rex;
-            width: 10rex;
-            padding: 1rex;
-
+                    &--img {
+                            @include utils.footer-flex-center-row;
+                            height: 10rex;
+                            width: 10rex;
+                    
+                        }
+            }
         }
 
-        .navigation__developer__logo--img {
-            @include footer-flex-center-row;
-            height: 10rex;
-            width: 10rex;
+        &--menu-list {
+            @include utils.footer-flex-center-row;
+            font-size: large;
+            list-style-type: none;
 
+
+            li {
+                margin-right: 2rex;
+                padding: 1rex;
+                @include utils.footer-flex-center-row;
+            }
         }
     }
-
-    .navbar-menu-list {
-        @include footer-flex-center-row;
-        font-size: large;
-        list-style-type: none;
-
-
-        li {
-            margin-right: 2rex;
-            padding: 1rex;
-            @include footer-flex-center-row;
-        }
-    }
+    
 }
+
+
 
 
 @media (max-width: 750px) {
-    .navigation-header nav {
-        @include footer-flex-center;
+    .navigation__header__nav {
+        @include utils.flex-wrap-column;
 
-        .navbar-menu-list {
-            @include footer-flex-center;
+        &--menu-list {
+            @include utils.flex-wrap-column;
         }
     }
 }

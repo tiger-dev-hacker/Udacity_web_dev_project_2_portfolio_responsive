@@ -1,46 +1,45 @@
-@use "../utils/utils.scss";
-
+@use "../utils/utils";
 #latest-projects {
-    @include footer-flex-center-column;
+    @include utils.footer-flex-center-column;
 }
 
 article {
-    @include footer-flex-center-column;
+    @include utils.footer-flex-center-column;
     flex-wrap: wrap;
 }
 
 .latest__projects--container {
-    @include footer-flex-center-column;
-    background-color: $latest-project-container-color;
+    @include utils.footer-flex-center-column;
+    background-color: utils.$latest-project-container-color;
     padding: 1.5rex;
 
     .latest__project__card--title {
-        @include footer-flex-center;
+        @include utils.footer-flex-center;
         padding: 1rex;
     }
 
     .latest__project__card--title {
-        @include footer-flex-center;
+        @include utils.footer-flex-center;
         padding: 1rex;
     }
 
     .latest_projects__card--container {
-        @include footer-flex-center-row;
+        @include utils.footer-flex-center-row;
         padding: 1rex;
         width: 100%;
 
 
         .project__card--holder {
-            @include footer-flex-center-row;
+            @include utils.footer-flex-center-row;
             border: 2px solid purple;
             margin: 2rex;
             padding: 1rex;
-            background-color: $project-card-holder-color;
+            background-color: utils.$project-card-holder-color;
         }
     }
 
     .latest__projects--button {
-        @include footer-flex-center;
+        @include utils.footer-flex-center;
         margin-top: 2rex;
         padding: 1rex;
 
@@ -51,16 +50,16 @@ article {
 
 @media (max-width: 750px) {
     #latest-projects {
-        @include flex-wrap-column;
+        @include utils.flex-wrap-column;
 
         .latest__projects--container {
-            @include flex-wrap-column;
+            @include utils.flex-wrap-column;
 
             .latest_projects__card--container {
-                @include flex-wrap-column;
+                @include utils.flex-wrap-column;
 
                 .project__card--holder {
-                    @include flex-wrap-column;
+                    @include utils.flex-wrap-column;
                 }
             }
         }
