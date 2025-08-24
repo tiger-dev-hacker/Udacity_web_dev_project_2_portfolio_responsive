@@ -1,5 +1,4 @@
-@use "../utils/utils.scss";
-
+@use "../utils/utils";
 main {
     display: flex;
     align-items: center;
@@ -9,7 +8,7 @@ main {
 }
 
 .developer__bio__section--holder {
-    @include footer-flex-center-row;
+    @include utils.footer-flex-center-row;
     margin: 1rem;
     background-image: url("../../img/software_developer_vibe.jpg");
     width: 100vw;
@@ -17,13 +16,13 @@ main {
 }
 
 .developer__bio--section {
-    @include footer-flex-center-row;
+    @include utils.footer-flex-center-row;
     width: 100vw;
     margin: 1rem;
 
     .developer__bio__description--card {
-        @include footer-flex-center-column;
-        background-color: $developer-bio-description-card-color;
+        @include utils.footer-flex-center-column;
+        background-color: utils.$developer-bio-description-card-color;
         border: 2px solid purple;
         width: 40rex;
         height: 40rex;
@@ -34,29 +33,29 @@ main {
         .developer__bio--image {}
 
         .developer__bio__title {
-            @include footer-flex-center-row;
+            @include utils.footer-flex-center-row;
         }
 
         .developer__bio__blurb {
-            @include footer-flex-center-row;
+            @include utils.footer-flex-center-row;
         }
 
         .developer__bio--view-more {
-            @include footer-flex-center-row;
+            @include utils.footer-flex-center-row;
         }
 
         .developer__bio--connect {
-            @include footer-flex-center-row;
+            @include utils.footer-flex-center-row;
         }
     }
 }
 
 @media (max-width: 750px) {
     .developer__bio__section--holder {
-        @include flex-wrap-column;
+        @include utils.flex-wrap-column;
 
         .developer__bio--section {
-            @include flex-wrap-column;
+            @include utils.flex-wrap-column;
 
             .developer__bio__description--card {
                 flex: 100%;

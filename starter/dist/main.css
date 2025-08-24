@@ -1,11 +1,10 @@
-.navigation-header {
+.navigation__header {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
 }
-
-.navigation-header nav {
+.navigation__header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,52 +13,53 @@
   flex-direction: row;
   width: 100vw;
 }
-.navigation-header nav .navbar-logo {
+.navigation__header__nav__developer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rex;
   flex-direction: row;
+  margin: 1rex;
 }
-.navigation-header nav .navbar-logo .navigation__developer__logo {
+.navigation__header__nav__developer--logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   height: 10rex;
   width: 10rex;
   padding: 1rex;
-  flex-direction: row;
 }
-.navigation-header nav .navbar-logo .navigation__developer__logo--img {
+.navigation__header__nav__developer--logo--img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   height: 10rex;
   width: 10rex;
-  flex-direction: row;
 }
-.navigation-header nav .navbar-menu-list {
+.navigation__header__nav--menu-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   font-size: large;
   list-style-type: none;
-  flex-direction: row;
 }
-.navigation-header nav .navbar-menu-list li {
+.navigation__header__nav--menu-list li {
   margin-right: 2rex;
   padding: 1rex;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 @media (max-width: 750px) {
-  .navigation-header nav {
+  .navigation__header__nav {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .navigation-header nav .navbar-menu-list {
+  .navigation__header__nav--menu-list {
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -94,7 +94,6 @@ main {
   justify-content: center;
   flex-direction: row;
   margin: 1rem;
-  border: 2px solid red;
   background-image: url("../../img/software_developer_vibe.jpg");
   width: 100vw;
 }
@@ -167,10 +166,10 @@ main {
 
 article {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .latest__projects--container {
@@ -240,13 +239,15 @@ article {
 .flex-container {
   background-color: #d4f1f4;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 @media (max-width: 750px) {
   .flex-container {
     flex-direction: column;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
